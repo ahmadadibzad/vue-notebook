@@ -10,7 +10,7 @@
             <h3>{{ note.title?.length > 40 ? note.title.substring(0, 40) + ' ...' : note.title }}</h3>
         </header>
         <div class="note-body" @click="$emit('editNote', note)">
-            <p>
+            <p v-if="note.description">
                 {{ note.description?.length > 150 ? note.description?.substring(0, 150) + ' ...' : note.description }}
             </p>
         </div>
