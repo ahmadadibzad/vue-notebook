@@ -6,12 +6,12 @@
             <i class="fa-solid fa-edit" title="Edit" @click="$emit('editNote', note)"></i>
             <i class="fa-solid fa-trash-alt" title="Delete" @click="remove"></i>
         </div>
-        <header class="note-header">
-            <h3>{{ note.title }}</h3>
+        <header class="note-header" @click="$emit('editNote', note)">
+            <h3>{{ note.title?.length > 40 ? note.title.substring(0, 40) + ' ...' : note.title }}</h3>
         </header>
-        <div class="note-body">
+        <div class="note-body" @click="$emit('editNote', note)">
             <p>
-                {{ note.description }}
+                {{ note.description?.length > 150 ? note.description?.substring(0, 150) + ' ...' : note.description }}
             </p>
         </div>
     </article>
@@ -58,6 +58,15 @@ const remove = () => {
 .note-header,
 .note-body {
     cursor: pointer;
+}
+
+.note-header {
+    margin: 20px 0 10px 0;
+}
+
+.note-body p {
+    /* height: 78px; */
+    overflow: hidden;
 }
 
 .icons {

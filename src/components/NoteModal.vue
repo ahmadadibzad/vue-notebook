@@ -47,7 +47,7 @@ const save = () => {
 }
 
 onMounted(() => {
-    if (props.note) {
+    if (props.note && props.isEdit) {
         newNote.value = { ...props.note }
     }
     if (props.color) {
@@ -93,9 +93,15 @@ onMounted(() => {
     outline: none;
 }
 
+.input::placeholder {
+    color: #112D4E;
+}
+
 #modal-title-input {
     text-align: center;
     font-weight: 600;
+    width: 100%;
+    text-align: center;
 }
 
 #modal-body-input {

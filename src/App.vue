@@ -45,8 +45,10 @@ const load = () => {
 }
 
 const newNote = () => {
+    note.value = {} as any
     const randomColor: Color = getColor()
     color.value = randomColor
+    isEdit.value = false
     showModal.value = true
 }
 

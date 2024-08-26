@@ -3,35 +3,35 @@ import type { Color } from "@/models/color.model";
 export default function useColor() {
     const colors: Color[] = [
         /* Red */
-        { bgcolor: '#FF7043', fgcolor: '#C12E00' },
-        { bgcolor: '#EF5350', fgcolor: '#FAC6C5' },
-        { bgcolor: '#EC407A', fgcolor: '#F7ADC6' },
+        { bgcolor: '#FF7043', fgcolor: '#FFF' },
+        { bgcolor: '#EF5350', fgcolor: '#FFF' },
+        { bgcolor: '#EC407A', fgcolor: '#FFF' },
 
         /* Purple */
         { bgcolor: '#AB47BC', fgcolor: '#FFF' },
-        { bgcolor: '#7E57C2', fgcolor: '#BDA9E0' },
-        { bgcolor: '#5C6BC0', fgcolor: '#AEB5E0' },
+        { bgcolor: '#7E57C2', fgcolor: '#FFF' },
+        { bgcolor: '#5C6BC0', fgcolor: '#FFF' },
 
         /* Blue */
-        { bgcolor: '#42A5F5', fgcolor: '#0966B1' },
-        { bgcolor: '#29B6F6', fgcolor: '#0774A5' },
-        { bgcolor: '#26C6DA', fgcolor: '#167783' },
+        { bgcolor: '#42A5F5', fgcolor: '#112D4E' },
+        { bgcolor: '#29B6F6', fgcolor: '#112D4E' },
+        { bgcolor: '#26C6DA', fgcolor: '#112D4E' },
 
         /* Green */
-        { bgcolor: '#26A69A', fgcolor: '#17645C' },
-        { bgcolor: '#66BB6A', fgcolor: '#357838' },
-        { bgcolor: '#9CCC65', fgcolor: '#5F892E' },
-        { bgcolor: '#D4E157', fgcolor: '#939F1C' },
+        { bgcolor: '#26A69A', fgcolor: '#112D4E' },
+        { bgcolor: '#66BB6A', fgcolor: '#112D4E' },
+        { bgcolor: '#9CCC65', fgcolor: '#112D4E' },
+        { bgcolor: '#D4E157', fgcolor: '#112D4E' },
 
         /* Yellow */
-        { bgcolor: '#FFEE58', fgcolor: '#CEB900' },
-        { bgcolor: '#FFCA28', fgcolor: '#B18500' },
-        { bgcolor: '#FFA726', fgcolor: '#B06900' },
+        { bgcolor: '#FFEE58', fgcolor: '#112D4E' },
+        { bgcolor: '#FFCA28', fgcolor: '#112D4E' },
+        { bgcolor: '#FFA726', fgcolor: '#112D4E' },
 
         /* Cold */
         { bgcolor: '#8D6E63', fgcolor: '#FFF' },
         { bgcolor: '#BDBDBD', fgcolor: '#717171' },
-        { bgcolor: '#78909C', fgcolor: '#465760' },
+        { bgcolor: '#78909C', fgcolor: '#112D4E' },
     ]
 
     const pickColor = (): Color => {
